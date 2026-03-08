@@ -62,16 +62,17 @@ The Jackal ships with a Sony PS4 DualShock controller for wireless teleoperation
 ### Pairing the Controller
 
 1. Press and hold the **PS button** and **SHARE button** simultaneously until the light bar flashes white rapidly — the controller is in pairing mode.
+
 2. On the robot (via SSH):
 
-```bash
-sudo bluetoothctl
-scan on
-# Wait for "DualShock 4" to appear with its MAC address, e.g. AA:BB:CC:DD:EE:FF
-pair AA:BB:CC:DD:EE:FF
-trust AA:BB:CC:DD:EE:FF
-connect AA:BB:CC:DD:EE:FF
-```
+   ```bash
+   sudo bluetoothctl
+   scan on
+   # Wait for "DualShock 4" to appear with its MAC address, e.g. AA:BB:CC:DD:EE:FF
+   pair AA:BB:CC:DD:EE:FF
+   trust AA:BB:CC:DD:EE:FF
+   connect AA:BB:CC:DD:EE:FF
+   ```
 
 3. The controller light bar will turn solid blue when paired.
 
