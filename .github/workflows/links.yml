@@ -1,0 +1,53 @@
+name: Links
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 8 * * 1'  # Every Monday at 08:00 UTC
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  internal:
+    name: Internal Links
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check internal links (offline)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >
+            --offline
+            --include-fragments
+            --no-progress
+            README.md
+            docs/**/*.md
+          fail: true
+
+  external:
+    name: External Links
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check external links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >
+            --no-progress
+            --include-fragments
+            --exclude 'localhost|192\.168\.'
+            README.md
+            docs/**/*.md
+          fail: true

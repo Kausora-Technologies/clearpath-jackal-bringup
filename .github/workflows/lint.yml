@@ -1,4 +1,4 @@
-name: Documentation CI
+name: Lint
 
 on:
   push:
@@ -18,8 +18,8 @@ concurrency:
 
 jobs:
 
-  markdown-lint:
-    name: Lint Markdown
+  markdown:
+    name: Markdown
     runs-on: ubuntu-22.04
     timeout-minutes: 5
     steps:
@@ -34,8 +34,8 @@ jobs:
             README.md
             docs/**/*.md
 
-  shellcheck:
-    name: Lint Shell Scripts
+  shell:
+    name: Shell Scripts
     runs-on: ubuntu-22.04
     timeout-minutes: 5
     steps:
@@ -47,8 +47,8 @@ jobs:
           scandir: ./scripts
           severity: warning
 
-  validate-configs:
-    name: Validate Config Files
+  configs:
+    name: Config Files
     runs-on: ubuntu-22.04
     timeout-minutes: 5
     steps:
@@ -57,16 +57,16 @@ jobs:
       - name: Validate YAML files
         run: |
           python3 -c "
-          import yaml, sys
+          import yaml
           files = [
               'config/robot.yaml.example',
-              '.github/workflows/ci.yml',
-              '.github/workflows/external-links.yml',
+              '.github/workflows/lint.yml',
+              '.github/workflows/links.yml',
           ]
           for path in files:
               with open(path) as f:
                   yaml.safe_load(f)
-              print(f'{path}: valid YAML')
+              print(path + ': valid YAML')
           "
 
       - name: Validate JSON files
@@ -74,8 +74,8 @@ jobs:
           python3 -m json.tool .markdownlint.json > /dev/null
           echo '.markdownlint.json: valid JSON'
 
-  spell-check:
-    name: Spell Check
+  spelling:
+    name: Spelling
     runs-on: ubuntu-22.04
     timeout-minutes: 5
     steps:
@@ -84,23 +84,5 @@ jobs:
       - name: Run codespell
         uses: codespell-project/actions-codespell@v2
         with:
-          skip: '.git,*.pdf,*.svg,*.png,*.zip,gen,clearpath-latex'
+          skip: '.git,*.pdf,*.svg,*.png,*.zip,*.mp4,gen,clearpath-latex'
           ignore_words_file: .codespellignore
-
-  link-check-internal:
-    name: Check Internal Links
-    runs-on: ubuntu-22.04
-    timeout-minutes: 10
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Check internal links (offline)
-        uses: lycheeverse/lychee-action@v2
-        with:
-          args: >
-            --offline
-            --include-fragments
-            --no-progress
-            README.md
-            docs/**/*.md
-          fail: true

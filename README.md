@@ -2,7 +2,8 @@
 
 **Kausora Technologies** | ROS 2 bring-up and integration guide for the Clearpath Jackal UGV.
 
-[![Documentation CI](https://github.com/Kausora-Technologies/clearpath-jackal-bringup/actions/workflows/ci.yml/badge.svg)](https://github.com/Kausora-Technologies/clearpath-jackal-bringup/actions/workflows/ci.yml)
+[![Lint](https://github.com/Kausora-Technologies/clearpath-jackal-bringup/actions/workflows/lint.yml/badge.svg)](https://github.com/Kausora-Technologies/clearpath-jackal-bringup/actions/workflows/lint.yml)
+[![Links](https://github.com/Kausora-Technologies/clearpath-jackal-bringup/actions/workflows/links.yml/badge.svg)](https://github.com/Kausora-Technologies/clearpath-jackal-bringup/actions/workflows/links.yml)
 
 ![Clearpath Jackal UGV](media/clearpath_jackal.jpg)
 
