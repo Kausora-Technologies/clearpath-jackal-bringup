@@ -40,7 +40,7 @@ echo "[OK] sudo access confirmed."
 echo ""
 echo "[INFO] Installing required packages..."
 sudo apt update -qq
-DEBIAN_FRONTEND=noninteractive sudo apt install -y \
+sudo DEBIAN_FRONTEND=noninteractive apt install -y \
   ros-${ROS_DISTRO}-clearpath-desktop \
   ros-${ROS_DISTRO}-nav2-bringup \
   ros-${ROS_DISTRO}-slam-toolbox \
@@ -54,7 +54,9 @@ DEBIAN_FRONTEND=noninteractive sudo apt install -y \
   ros-${ROS_DISTRO}-rqt-common-plugins \
   ros-${ROS_DISTRO}-rqt-robot-monitor \
   ros-${ROS_DISTRO}-rqt-tf-tree \
-  graphviz
+  ros-${ROS_DISTRO}-rqt-image-view \
+  graphviz \
+  evince
 echo "[OK] Packages installed."
 
 # ── Step 3: Configure ~/.bashrc ────────────────────────────────────────────

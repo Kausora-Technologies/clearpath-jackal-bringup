@@ -212,8 +212,6 @@ ros2 topic echo /navigate_to_pose/_action/feedback
 
 ---
 
----
-
 ## Visual SLAM — ORB-SLAM3 (Camera Payload Required)
 
 ORB-SLAM3 is a feature-based visual SLAM algorithm that works with monocular, stereo, or RGB-D cameras. It is an alternative to `slam_toolbox` for Jackal platforms equipped with a camera payload, and can operate without LiDAR.

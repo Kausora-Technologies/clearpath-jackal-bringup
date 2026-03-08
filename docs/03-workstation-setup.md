@@ -115,6 +115,7 @@ Then you can use `ssh administrator@jackal` and set `ROS_DISCOVERY_SERVER` by ho
 If your integration requires a custom ROS 2 workspace:
 
 ```bash
+# Replace ~/kausora_ws with your preferred workspace name (e.g. ~/ros2_ws)
 mkdir -p ~/kausora_ws/src
 cd ~/kausora_ws/src
 # Clone integration packages here

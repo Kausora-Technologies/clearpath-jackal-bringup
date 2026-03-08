@@ -86,7 +86,7 @@ clearpath-jackal-bringup/
 └── media/
     ├── clearpath_jackal.jpg          # Robot platform photo
     ├── basic_simulation.mp4          # Gazebo simulation demo
-    ├── Clearpath Jackal benchmark.mp4  # Platform benchmark recording
+    ├── clearpath_jackal_benchmark.mp4  # Platform benchmark recording
     ├── ORB_SLAM3.mp4                 # ORB-SLAM3 live operation
     └── ORB_SLAM3_rosbag.mp4          # ORB-SLAM3 rosbag replay
 ```
@@ -285,7 +285,7 @@ Full safety documentation: [docs/safety-notes.md](docs/safety-notes.md)
 
 ### Platform Benchmark
 
-<video src="media/Clearpath Jackal benchmark.mp4" controls width="100%"></video>
+<video src="media/clearpath_jackal_benchmark.mp4" controls width="100%"></video>
 
 ### Simulation (Gazebo)
 
@@ -309,7 +309,7 @@ Full safety documentation: [docs/safety-notes.md](docs/safety-notes.md)
 | Nav2 Documentation | [navigation.ros.org](https://navigation.ros.org/) |
 | slam_toolbox | [github.com/SteveMacenski/slam_toolbox](https://github.com/SteveMacenski/slam_toolbox) |
 | ROS 2 DDS / RMW | [docs.ros.org](https://docs.ros.org/en/humble/Concepts/About-Different-Middleware-Vendors.html) |
-| Jackal Hardware User Manual | [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs/ros2/robots/indoor/jackal/) |
+| Jackal Hardware User Manual | [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs/robots/outdoor_robots/jackal/user_manual_jackal/) |
 
 ---
 
@@ -321,4 +321,4 @@ This repository is an independent integration guide and is not affiliated with o
 
 ---
 
-*For internal support, contact the Kausora Technologies robotics integration team.*
+*For support or questions, open an issue on [GitHub](https://github.com/Kausora-Technologies/clearpath-jackal-bringup/issues).*

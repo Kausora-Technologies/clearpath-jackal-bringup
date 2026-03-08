@@ -96,10 +96,14 @@ sudo apt install \
   ros-humble-rqt-common-plugins \
   ros-humble-rqt-robot-monitor \
   ros-humble-rqt-tf-tree \
-  graphviz
+  ros-humble-rqt-image-view \
+  graphviz \
+  evince
 ```
 
 > `graphviz` is required by `ros2 run tf2_tools view_frames` to render the TF tree as a PDF.
+> `evince` is used to view the generated `frames.pdf`.
+> `ros-humble-rqt-image-view` is required for camera feed inspection during sensor validation.
 
 ---
 
