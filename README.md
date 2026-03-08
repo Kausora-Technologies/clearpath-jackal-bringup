@@ -4,6 +4,8 @@
 
 [![Documentation CI](https://github.com/Kausora-Technologies/clearpath-jackal-bringup/actions/workflows/ci.yml/badge.svg)](https://github.com/Kausora-Technologies/clearpath-jackal-bringup/actions/workflows/ci.yml)
 
+![Clearpath Jackal UGV](media/clearpath_jackal.jpg)
+
 ---
 
 ## Overview
@@ -78,8 +80,14 @@ clearpath-jackal-bringup/
 │   └── validation-checklist.md      # Pre-deployment validation checklist
 ├── config/
 │   └── robot.yaml.example           # Example Clearpath robot configuration
-└── scripts/
-    └── setup_workstation.sh         # Workstation environment setup script
+├── scripts/
+│   └── setup_workstation.sh         # Workstation environment setup script
+└── media/
+    ├── clearpath_jackal.jpg          # Robot platform photo
+    ├── basic_simulation.mp4          # Gazebo simulation demo
+    ├── Clearpath Jackal benchmark.mp4  # Platform benchmark recording
+    ├── ORB_SLAM3.mp4                 # ORB-SLAM3 live operation
+    └── ORB_SLAM3_rosbag.mp4          # ORB-SLAM3 rosbag replay
 ```
 
 ---
@@ -269,6 +277,24 @@ Full safety documentation: [docs/safety-notes.md](docs/safety-notes.md)
 - The Jackal can reach speeds of up to 2.0 m/s — do not operate in confined spaces at full speed.
 - Disconnect battery before opening the chassis or connecting external hardware.
 - Do not exceed the 20 kg payload capacity.
+
+---
+
+## Media
+
+### Platform Benchmark
+
+<video src="media/Clearpath Jackal benchmark.mp4" controls width="100%"></video>
+
+### Simulation (Gazebo)
+
+<video src="media/basic_simulation.mp4" controls width="100%"></video>
+
+### Visual SLAM — ORB-SLAM3
+
+<video src="media/ORB_SLAM3.mp4" controls width="100%"></video>
+
+<video src="media/ORB_SLAM3_rosbag.mp4" controls width="100%"></video>
 
 ---
 

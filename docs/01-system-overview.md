@@ -4,6 +4,8 @@
 
 The Jackal is a compact, rugged, and fast unmanned ground vehicle designed for indoor and outdoor research and development. It is manufactured by Clearpath Robotics and runs ROS 2 on an onboard x86 PC.
 
+![Clearpath Jackal UGV](../media/clearpath_jackal.jpg)
+
 ---
 
 ## Hardware Components

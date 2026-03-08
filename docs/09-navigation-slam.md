@@ -212,6 +212,24 @@ ros2 topic echo /navigate_to_pose/_action/feedback
 
 ---
 
+---
+
+## Visual SLAM — ORB-SLAM3 (Camera Payload Required)
+
+ORB-SLAM3 is a feature-based visual SLAM algorithm that works with monocular, stereo, or RGB-D cameras. It is an alternative to `slam_toolbox` for Jackal platforms equipped with a camera payload, and can operate without LiDAR.
+
+> ORB-SLAM3 is not included in the standard Clearpath software stack. Integration requires building from source or using a community ROS 2 wrapper. Refer to the [ORB-SLAM3 repository](https://github.com/UZ-SLAMLab/ORB_SLAM3) for build instructions.
+
+### Live Operation
+
+<video src="../media/ORB_SLAM3.mp4" controls width="100%"></video>
+
+### Rosbag Replay
+
+<video src="../media/ORB_SLAM3_rosbag.mp4" controls width="100%"></video>
+
+---
+
 ## Related Documents
 
 - [07-sensor-validation.md](07-sensor-validation.md)
