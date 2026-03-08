@@ -69,7 +69,7 @@ ip addr show
 
 Using NetworkManager (Ubuntu Desktop):
 
-```
+```text
 Connection: Wired
 IPv4 Method: Manual
 Address: 192.168.131.51
@@ -138,7 +138,7 @@ ros2 topic list
 
 Expected output includes topics such as:
 
-```
+```text
 /cmd_vel
 /diagnostics
 /imu/data

@@ -44,27 +44,27 @@ Add the following displays in RViz for a complete operational view:
 
 Set the fixed frame to `odom` for local navigation, or `map` when using Nav2 with a map.
 
-```
+```text
 Global Options → Fixed Frame: odom
 ```
 
 ### Robot Model
 
-```
+```text
 Add → RobotModel
   Description Topic: /robot_description
 ```
 
 ### TF
 
-```
+```text
 Add → TF
   (Optionally filter to key frames: odom, base_link, laser)
 ```
 
 ### Odometry
 
-```
+```text
 Add → Odometry
   Topic: /odometry/filtered
   Keep: 200 (arrow history)
@@ -72,7 +72,7 @@ Add → Odometry
 
 ### LaserScan (if equipped)
 
-```
+```text
 Add → LaserScan
   Topic: /scan
   Size (m): 0.03
@@ -81,14 +81,14 @@ Add → LaserScan
 
 ### IMU
 
-```
+```text
 Add → Imu
   Topic: /imu/data
 ```
 
 ### Map (Nav2)
 
-```
+```text
 Add → Map
   Topic: /map
   Color Scheme: costmap
@@ -96,7 +96,7 @@ Add → Map
 
 ### Global Costmap (Nav2)
 
-```
+```text
 Add → Map
   Topic: /global_costmap/costmap
   Alpha: 0.5
@@ -104,7 +104,7 @@ Add → Map
 
 ### Local Costmap (Nav2)
 
-```
+```text
 Add → Map
   Topic: /local_costmap/costmap
   Alpha: 0.7
@@ -112,7 +112,7 @@ Add → Map
 
 ### Path (Nav2)
 
-```
+```text
 Add → Path
   Topic: /plan        (global plan)
   Color: Green
@@ -124,7 +124,7 @@ Add → Path
 
 ### Goal Pose (Nav2)
 
-```
+```text
 Add → Pose
   Topic: /goal_pose
 ```
@@ -135,7 +135,7 @@ Add → Pose
 
 To save your display configuration for reuse:
 
-```
+```text
 File → Save Config As → /path/to/jackal_bringup.rviz
 ```
 

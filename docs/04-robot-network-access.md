@@ -76,9 +76,10 @@ ssh administrator@192.168.131.1
 ```
 
 > Change the default password after first login:
-> ```bash
-> passwd
-> ```
+
+```bash
+passwd
+```
 
 Verify the robot's hostname and IP:
 

@@ -112,7 +112,7 @@ ros2 topic info /imu/data
 
 Expected node list includes nodes such as:
 
-```
+```text
 /controller_manager
 /ekf_node
 /imu_filter_node

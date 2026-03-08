@@ -107,7 +107,7 @@ ros2 topic list
 
 Minimum expected topics after successful bring-up:
 
-```
+```text
 /cmd_vel
 /diagnostics
 /imu/data
@@ -144,7 +144,7 @@ ros2 run tf2_tools view_frames
 
 This generates `frames.pdf` in the current directory. Inspect it to confirm the TF tree is complete:
 
-```
+```text
 odom → base_link → [sensor frames]
 ```
 

@@ -85,7 +85,7 @@ The following are the core topics published and subscribed to by the Jackal plat
 
 The default URDF frames for Jackal are:
 
-```
+```text
 odom
 └── base_link
     ├── imu_link

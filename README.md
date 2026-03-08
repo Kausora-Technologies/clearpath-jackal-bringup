@@ -58,7 +58,7 @@ The guide covers workstation setup, robot network access, ROS 2 environment conf
 
 ## Repository Structure
 
-```
+```text
 clearpath-jackal-bringup/
 ├── README.md                        # This document
 ├── LICENSE
@@ -276,13 +276,13 @@ Full safety documentation: [docs/safety-notes.md](docs/safety-notes.md)
 
 | Resource | Link |
 |---|---|
-| Clearpath Jackal ROS 2 Docs | https://docs.clearpathrobotics.com/docs/ros2/robots/indoor/jackal/ |
-| Clearpath Platform Software | https://docs.clearpathrobotics.com/docs/ros2/getting_started/ |
-| ROS 2 Humble Documentation | https://docs.ros.org/en/humble/ |
-| Nav2 Documentation | https://navigation.ros.org/ |
-| slam_toolbox | https://github.com/SteveMacenski/slam_toolbox |
-| ROS 2 DDS / RMW | https://docs.ros.org/en/humble/Concepts/About-Different-Middleware-Vendors.html |
-| Jackal Hardware User Manual | https://docs.clearpathrobotics.com/docs/ros2/robots/indoor/jackal/ |
+| Clearpath Jackal ROS 2 Docs | [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs/ros2/robots/indoor/jackal/) |
+| Clearpath Platform Software | [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs/ros2/getting_started/) |
+| ROS 2 Humble Documentation | [docs.ros.org](https://docs.ros.org/en/humble/) |
+| Nav2 Documentation | [navigation.ros.org](https://navigation.ros.org/) |
+| slam_toolbox | [github.com/SteveMacenski/slam_toolbox](https://github.com/SteveMacenski/slam_toolbox) |
+| ROS 2 DDS / RMW | [docs.ros.org](https://docs.ros.org/en/humble/Concepts/About-Different-Middleware-Vendors.html) |
+| Jackal Hardware User Manual | [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs/ros2/robots/indoor/jackal/) |
 
 ---
 

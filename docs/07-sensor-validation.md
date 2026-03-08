@@ -191,7 +191,7 @@ evince frames.pdf
 
 Verify all expected frames are present:
 
-```
+```text
 odom
 └── base_link
     ├── imu_link
