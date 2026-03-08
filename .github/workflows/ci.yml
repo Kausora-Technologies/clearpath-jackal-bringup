@@ -1,0 +1,66 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+
+  markdown-lint:
+    name: Lint Markdown
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run markdownlint
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: |
+            README.md
+            docs/**/*.md
+
+  shellcheck:
+    name: Lint Shell Scripts
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@2.0.0
+        with:
+          scandir: ./scripts
+          severity: warning
+
+  validate-yaml:
+    name: Validate YAML
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate robot.yaml.example
+        run: |
+          python3 -c "
+          import yaml
+          with open('config/robot.yaml.example') as f:
+              yaml.safe_load(f)
+          print('robot.yaml.example: valid')
+          "
+
+  link-check:
+    name: Check Internal Links
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check internal links (offline)
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >
+            --offline
+            --include-fragments
+            --verbose
+            README.md
+            docs/**/*.md
+          fail: true
