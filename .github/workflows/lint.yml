@@ -62,6 +62,7 @@ jobs:
               'config/robot.yaml.example',
               '.github/workflows/lint.yml',
               '.github/workflows/links.yml',
+              '.github/workflows/external-links.yml',
           ]
           for path in files:
               with open(path) as f:

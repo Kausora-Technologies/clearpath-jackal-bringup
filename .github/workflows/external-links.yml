@@ -1,10 +1,8 @@
-name: Links
+name: External Links
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  schedule:
+    - cron: '0 8 * * 1'  # Every Monday at 08:00 UTC
   workflow_dispatch:
 
 concurrency:
@@ -13,20 +11,20 @@ concurrency:
 
 jobs:
 
-  internal:
-    name: Internal Links
+  external:
+    name: External Links
     runs-on: ubuntu-22.04
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
-      - name: Check internal links (offline)
+      - name: Check external links
         uses: lycheeverse/lychee-action@v2
         with:
           args: >
-            --offline
-            --include-fragments
             --no-progress
+            --include-fragments
+            --exclude 'localhost|192\.168\.'
             README.md
             docs/**/*.md
           fail: true
