@@ -126,7 +126,7 @@ If the robot causes an injury or property damage, or if a near-miss occurs:
 ## Contact
 
 - **Clearpath Robotics Support:** support@clearpathrobotics.com
-- **Kausora Technologies:** https://github.com/KausoraTech/clearpath-jackal-bringup/issues
+- **Kausora Technologies:** https://github.com/Kausora-Technologies/clearpath-jackal-bringup/issues
 
 ---
 
