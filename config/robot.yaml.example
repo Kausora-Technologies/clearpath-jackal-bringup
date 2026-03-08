@@ -1,0 +1,74 @@
+# Clearpath Robot Configuration Example
+# Location on robot: /etc/clearpath/robot.yaml
+#
+# This file configures the Clearpath platform software for the Jackal UGV.
+# Edit this file on the robot, then restart the clearpath-robot service:
+#   sudo systemctl restart clearpath-robot.service
+#
+# Full reference: https://docs.clearpathrobotics.com/docs/ros2/config/yaml/
+
+serial_number: a200-0000   # Replace with your robot's serial number
+
+version: 0
+
+system:
+  hosts:
+    - hostname: cpr-jackal-0000
+      ip: 192.168.131.1
+  ros2:
+    namespace: a200_0000     # Derived from serial_number: hyphens replaced with underscores for ROS 2 name validity
+    domain_id: 0
+    rmw_implementation: rmw_fastrtps_cpp
+    workspaces: []
+
+platform:
+  controller: ps4
+  battery:
+    model: HE2613
+    configuration: S8P1
+
+  attachments:
+    - name: front_bumper
+      type: bumper
+      model: default
+      parent: front_bumper_mount
+    - name: rear_bumper
+      type: bumper
+      model: default
+      parent: rear_bumper_mount
+
+links: []
+
+# Sensor payloads — uncomment and configure as appropriate
+
+# Example: 2D LiDAR (Hokuyo UST-10LX)
+# sensors:
+#   - name: lidar2d_0
+#     type: lidar2d
+#     model: hokuyo_ust10
+#     parent: sensor_arch_mount_link
+#     xyz: [0.0, 0.0, 0.0]
+#     rpy: [0.0, 0.0, 0.0]
+#     ros_parameters:
+#       ip_address: 192.168.131.20
+#       ip_port: 10940
+
+# Example: Intel RealSense D435
+# sensors:
+#   - name: realsense_0
+#     type: camera
+#     model: realsense_d435
+#     parent: sensor_arch_mount_link
+#     xyz: [0.0, 0.0, 0.0]
+#     rpy: [0.0, 0.0, 0.0]
+
+# Example: Velodyne VLP-16
+# sensors:
+#   - name: lidar3d_0
+#     type: lidar3d
+#     model: velodyne_vlp16
+#     parent: sensor_arch_mount_link
+#     xyz: [0.0, 0.0, 0.0]
+#     rpy: [0.0, 0.0, 0.0]
+#     ros_parameters:
+#       device_ip: 192.168.131.25

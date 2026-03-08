@@ -1,0 +1,50 @@
+# ── Clearpath Robotics source material ────────────────────────────────────
+# These files originate from the Clearpath Jackal User Manual repo and are
+# subject to Clearpath Robotics copyright. Do NOT commit to this repository.
+jackal.tex
+jackal.pdf
+jackal-manual-*.pdf
+jackal-user-manual.zip
+jackal.aux
+jackal.log
+jackal.toc
+cover-page.pdf
+hmi.pdf
+user-power.pdf
+user-power.svg
+user-tray.svg
+battery-view.svg
+overview-diagram.svg
+pc-access.svg
+wired_connection.png
+Sony_PS4_Controller_Labelled.pdf
+icon-battery.pdf
+icon-comms.pdf
+icon-motor.pdf
+icon-power.pdf
+icon-wifi.pdf
+clearpath-latex/
+gen/
+
+# ── LaTeX build artifacts ──────────────────────────────────────────────────
+*.aux
+*.log
+*.toc
+*.out
+*.swp
+*.gz
+*.synctex.gz
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# OS
+.DS_Store
+Thumbs.db
