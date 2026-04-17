@@ -233,5 +233,5 @@ ORB-SLAM3 is a feature-based visual SLAM algorithm that works with monocular, st
 - [07-sensor-validation.md](07-sensor-validation.md)
 - [10-rviz-visualization.md](10-rviz-visualization.md)
 - [troubleshooting.md](troubleshooting.md)
-- [Nav2 Documentation](https://navigation.ros.org/)
+- [Nav2 Documentation](https://docs.nav2.org/)
 - [slam_toolbox GitHub](https://github.com/SteveMacenski/slam_toolbox)

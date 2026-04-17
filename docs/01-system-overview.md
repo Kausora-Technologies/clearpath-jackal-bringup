@@ -107,4 +107,4 @@ All sensor payload frames are added to the URDF via the robot configuration file
 
 - [02-prerequisites.md](02-prerequisites.md)
 - [06-robot-bringup.md](06-robot-bringup.md)
-- [Clearpath Jackal ROS 2 Docs](https://docs.clearpathrobotics.com/docs/ros2/robots/indoor/jackal/)
+- [Clearpath Jackal ROS 2 Docs](https://docs.clearpathrobotics.com/docs/ros2humble/ros/)

@@ -160,4 +160,4 @@ ros2 --version
 
 - [03-workstation-setup.md](03-workstation-setup.md)
 - [ROS 2 Humble Installation](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
-- [Clearpath Getting Started](https://docs.clearpathrobotics.com/docs/ros2/getting_started/)
+- [Clearpath Getting Started](https://docs.clearpathrobotics.com/docs/ros/installation/overview)

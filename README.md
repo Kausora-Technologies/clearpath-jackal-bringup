@@ -303,13 +303,13 @@ Full safety documentation: [docs/safety-notes.md](docs/safety-notes.md)
 
 | Resource | Link |
 |---|---|
-| Clearpath Jackal ROS 2 Docs | [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs/ros2/robots/indoor/jackal/) |
-| Clearpath Platform Software | [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs/ros2/getting_started/) |
+| Clearpath Jackal ROS 2 Docs | [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs/ros2humble/ros/) |
+| Clearpath Platform Software | [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs/ros/installation/overview) |
 | ROS 2 Humble Documentation | [docs.ros.org](https://docs.ros.org/en/humble/) |
-| Nav2 Documentation | [navigation.ros.org](https://navigation.ros.org/) |
+| Nav2 Documentation | [docs.nav2.org](https://docs.nav2.org/) |
 | slam_toolbox | [github.com/SteveMacenski/slam_toolbox](https://github.com/SteveMacenski/slam_toolbox) |
 | ROS 2 DDS / RMW | [docs.ros.org](https://docs.ros.org/en/humble/Concepts/About-Different-Middleware-Vendors.html) |
-| Jackal Hardware User Manual | [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs/robots/outdoor_robots/jackal/user_manual_jackal/) |
+| Jackal Hardware User Manual | [docs.clearpathrobotics.com](https://docs.clearpathrobotics.com/docs_robots/outdoor_robots/jackal/user_manual_jackal/) |
 
 ---
 
